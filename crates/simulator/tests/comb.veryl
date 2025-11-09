@@ -1,0 +1,7 @@
+module Top (
+    a: input  logic<32>,
+    b: input  logic<32>,
+    c: output logic<32>,
+) {
+    assign c = a + b;
+}
