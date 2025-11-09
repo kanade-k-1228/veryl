@@ -1,4 +1,4 @@
-module Top (
+module CombTest (
     a: input  logic<32>,
     b: input  logic<32>,
     c: output logic<32>,

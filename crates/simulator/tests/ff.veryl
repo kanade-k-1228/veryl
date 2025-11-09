@@ -1,8 +1,8 @@
-module Top (
-    clk: input  clock,
-    rst: input reset,
-    a: output logic,
-    b: output logic<32>,
+module FFTest (
+    clk: input  clock    ,
+    rst: input  reset    ,
+    a  : output logic    ,
+    b  : output logic<32>,
 ) {
     always_ff {
         if_reset {

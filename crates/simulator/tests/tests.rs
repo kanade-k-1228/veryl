@@ -31,7 +31,7 @@ fn test_comb() {
     let mut init = HashMap::new();
     init.insert("a".to_string(), 10);
     init.insert("b".to_string(), 20);
-    let mut model = Model::new("Top", init);
+    let mut model = Model::new("CombTest", init);
     assert_eq!(model.get("c"), Some(30));
 
     model.input("a", 20);
@@ -43,7 +43,7 @@ fn test_comb() {
 fn test_ff() {
     let code = std::fs::read_to_string("tests/ff.veryl").unwrap();
     analyze(&code);
-    let mut model = Model::new("Top", HashMap::new());
+    let mut model = Model::new("FFTest", HashMap::new());
 
     model.reset();
 
